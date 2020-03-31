@@ -51,5 +51,10 @@ namespace PokedexC_sharp
             nombre.Text = pokemons.Rows[0]["nombre"].ToString();//coge la columna nombre y la pasa a String
             imagen.Image = blobImagen((byte[])pokemons.Rows[0]["imagen"]);//pone la imagen del pokemon
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
