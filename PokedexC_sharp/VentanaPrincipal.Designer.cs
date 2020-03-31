@@ -58,6 +58,8 @@
             // 
             this.anterior.BackColor = System.Drawing.Color.Transparent;
             this.anterior.FlatAppearance.BorderSize = 0;
+            this.anterior.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.anterior.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.anterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.anterior.Location = new System.Drawing.Point(367, 682);
             this.anterior.Name = "anterior";
@@ -70,6 +72,8 @@
             // 
             this.siguiente.BackColor = System.Drawing.Color.Transparent;
             this.siguiente.FlatAppearance.BorderSize = 0;
+            this.siguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.siguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.siguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.siguiente.ForeColor = System.Drawing.Color.Black;
             this.siguiente.Location = new System.Drawing.Point(445, 682);
@@ -88,11 +92,14 @@
             this.nombre.Name = "nombre";
             this.nombre.Size = new System.Drawing.Size(428, 108);
             this.nombre.TabIndex = 3;
+            this.nombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // descripcion
             // 
             this.descripcion.BackColor = System.Drawing.Color.Transparent;
             this.descripcion.FlatAppearance.BorderSize = 0;
+            this.descripcion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.descripcion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.descripcion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descripcion.Location = new System.Drawing.Point(94, 710);
@@ -106,6 +113,8 @@
             // 
             this.especie.BackColor = System.Drawing.Color.Transparent;
             this.especie.FlatAppearance.BorderSize = 0;
+            this.especie.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.especie.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.especie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.especie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.especie.Location = new System.Drawing.Point(716, 418);
@@ -119,6 +128,8 @@
             // 
             this.tipo.BackColor = System.Drawing.Color.Transparent;
             this.tipo.FlatAppearance.BorderSize = 0;
+            this.tipo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.tipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.tipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tipo.Location = new System.Drawing.Point(801, 418);
@@ -132,6 +143,8 @@
             // 
             this.habilidad.BackColor = System.Drawing.Color.Transparent;
             this.habilidad.FlatAppearance.BorderSize = 0;
+            this.habilidad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.habilidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.habilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.habilidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.habilidad.Location = new System.Drawing.Point(886, 418);
@@ -145,6 +158,8 @@
             // 
             this.habitat.BackColor = System.Drawing.Color.Transparent;
             this.habitat.FlatAppearance.BorderSize = 0;
+            this.habitat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.habitat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.habitat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.habitat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.habitat.Location = new System.Drawing.Point(969, 418);
@@ -158,6 +173,8 @@
             // 
             this.Altura.BackColor = System.Drawing.Color.Transparent;
             this.Altura.FlatAppearance.BorderSize = 0;
+            this.Altura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Altura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Altura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Altura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Altura.Location = new System.Drawing.Point(1054, 418);
@@ -171,6 +188,8 @@
             // 
             this.movimiento2.BackColor = System.Drawing.Color.Transparent;
             this.movimiento2.FlatAppearance.BorderSize = 0;
+            this.movimiento2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.movimiento2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.movimiento2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.movimiento2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movimiento2.Location = new System.Drawing.Point(861, 574);
@@ -184,6 +203,8 @@
             // 
             this.posEvolucion.BackColor = System.Drawing.Color.Transparent;
             this.posEvolucion.FlatAppearance.BorderSize = 0;
+            this.posEvolucion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.posEvolucion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.posEvolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.posEvolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.posEvolucion.Location = new System.Drawing.Point(969, 471);
@@ -197,6 +218,8 @@
             // 
             this.movimiento1.BackColor = System.Drawing.Color.Transparent;
             this.movimiento1.FlatAppearance.BorderSize = 0;
+            this.movimiento1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.movimiento1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.movimiento1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.movimiento1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movimiento1.Location = new System.Drawing.Point(716, 574);
@@ -210,6 +233,8 @@
             // 
             this.preEvolucion.BackColor = System.Drawing.Color.Transparent;
             this.preEvolucion.FlatAppearance.BorderSize = 0;
+            this.preEvolucion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.preEvolucion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.preEvolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.preEvolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.preEvolucion.Location = new System.Drawing.Point(801, 471);
@@ -223,6 +248,8 @@
             // 
             this.peso.BackColor = System.Drawing.Color.Transparent;
             this.peso.FlatAppearance.BorderSize = 0;
+            this.peso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.peso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.peso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.peso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.peso.Location = new System.Drawing.Point(716, 471);
