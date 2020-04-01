@@ -21,6 +21,10 @@ namespace PokedexC_sharp
         public VentanaPrincipal()
         {
             InitializeComponent();
+            //es para que salga directamente Bulbasur al iniciar el programa
+            pokemons = conexion.getPokemonId(idActual);//pasa el id a la clase Conexion
+            label.Text = pokemons.Rows[0]["nombre"].ToString();//coge la columna nombre y la pasa a String
+            imagen.Image = blobImagen((byte[])pokemons.Rows[0]["imagen"]);//pone la imagen del pokemon
         }
 
         private Image blobImagen(byte[] img)
