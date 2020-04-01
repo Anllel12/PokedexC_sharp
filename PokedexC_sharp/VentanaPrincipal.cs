@@ -37,7 +37,7 @@ namespace PokedexC_sharp
 
             pokemons = conexion.getPokemonId(idActual);//pasa el id a la clase Conexion
 
-            nombre.Text = pokemons.Rows[0]["nombre"].ToString();//coge la columna nombre y la pasa a String
+            label.Text = pokemons.Rows[0]["nombre"].ToString();//coge la columna nombre y la pasa a String
             imagen.Image = blobImagen((byte[])pokemons.Rows[0]["imagen"]);//pone la imagen del pokemon
         }
 
@@ -48,8 +48,61 @@ namespace PokedexC_sharp
 
             pokemons = conexion.getPokemonId(idActual);//pasa el id a la clase Conexion
 
-            nombre.Text = pokemons.Rows[0]["nombre"].ToString();//coge la columna nombre y la pasa a String
+            label.Text = pokemons.Rows[0]["nombre"].ToString();//coge la columna nombre y la pasa a String
             imagen.Image = blobImagen((byte[])pokemons.Rows[0]["imagen"]);//pone la imagen del pokemon
+        }
+
+        private void especie_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["especie"].ToString();//coge la columna especie y la pasa a String
+        }
+
+        private void tipo_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["tipo1"].ToString();//coge la columna nombre y la pasa a String
+            label.Text += " " + pokemons.Rows[0]["tipo2"].ToString();//coge la columna nombre y la pasa a String
+        }
+
+        private void habilidad_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["habilidad"].ToString();//coge la columna nombre y la pasa a String
+        }
+
+        private void habitat_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["habitat"].ToString();//coge la columna nombre y la pasa a String
+        }
+
+        private void Altura_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["altura"].ToString();//coge la columna nombre y la pasa a String
+        }
+
+        private void peso_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["peso"].ToString();//coge la columna nombre y la pasa a String
+        }
+
+        private void preEvolucion_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["preEvolucion"].ToString();//coge la columna nombre y la pasa a String
+        }
+
+        private void posEvolucion_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["posEvolucion"].ToString();//coge la columna nombre y la pasa a String
+        }
+
+        private void movimiento1_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["movimiento1"].ToString();//coge la columna nombre y la pasa a String
+            label.Text += " " + pokemons.Rows[0]["movimiento2"].ToString();//coge la columna nombre y la pasa a String
+        }
+
+        private void movimiento2_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["movimiento3"].ToString();//coge la columna nombre y la pasa a String
+            label.Text += " " + pokemons.Rows[0]["movimiento4"].ToString();//coge la columna nombre y la pasa a String
         }
     }
 }

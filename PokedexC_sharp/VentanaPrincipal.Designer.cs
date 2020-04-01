@@ -31,16 +31,16 @@
             this.imagen = new System.Windows.Forms.PictureBox();
             this.anterior = new System.Windows.Forms.Button();
             this.siguiente = new System.Windows.Forms.Button();
-            this.nombre = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
             this.descripcion = new System.Windows.Forms.Button();
             this.especie = new System.Windows.Forms.Button();
             this.tipo = new System.Windows.Forms.Button();
             this.habilidad = new System.Windows.Forms.Button();
             this.habitat = new System.Windows.Forms.Button();
             this.Altura = new System.Windows.Forms.Button();
-            this.movimiento2 = new System.Windows.Forms.Button();
+            this.movimiento2_3 = new System.Windows.Forms.Button();
             this.posEvolucion = new System.Windows.Forms.Button();
-            this.movimiento1 = new System.Windows.Forms.Button();
+            this.movimiento1_2 = new System.Windows.Forms.Button();
             this.preEvolucion = new System.Windows.Forms.Button();
             this.peso = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imagen)).BeginInit();
@@ -84,16 +84,16 @@
             this.siguiente.UseVisualStyleBackColor = false;
             this.siguiente.Click += new System.EventHandler(this.siguiente_Click);
             // 
-            // nombre
+            // label
             // 
-            this.nombre.BackColor = System.Drawing.Color.Transparent;
-            this.nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombre.ForeColor = System.Drawing.Color.White;
-            this.nombre.Location = new System.Drawing.Point(711, 294);
-            this.nombre.Name = "nombre";
-            this.nombre.Size = new System.Drawing.Size(428, 108);
-            this.nombre.TabIndex = 3;
-            this.nombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.White;
+            this.label.Location = new System.Drawing.Point(711, 294);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(428, 108);
+            this.label.TabIndex = 3;
+            this.label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // descripcion
             // 
@@ -124,6 +124,7 @@
             this.especie.TabIndex = 5;
             this.especie.Text = "Especie";
             this.especie.UseVisualStyleBackColor = false;
+            this.especie.Click += new System.EventHandler(this.especie_Click);
             // 
             // tipo
             // 
@@ -139,6 +140,7 @@
             this.tipo.TabIndex = 6;
             this.tipo.Text = "Tipo";
             this.tipo.UseVisualStyleBackColor = false;
+            this.tipo.Click += new System.EventHandler(this.tipo_Click);
             // 
             // habilidad
             // 
@@ -154,6 +156,7 @@
             this.habilidad.TabIndex = 7;
             this.habilidad.Text = "Habilidad";
             this.habilidad.UseVisualStyleBackColor = false;
+            this.habilidad.Click += new System.EventHandler(this.habilidad_Click);
             // 
             // habitat
             // 
@@ -169,6 +172,7 @@
             this.habitat.TabIndex = 8;
             this.habitat.Text = "Habitat";
             this.habitat.UseVisualStyleBackColor = false;
+            this.habitat.Click += new System.EventHandler(this.habitat_Click);
             // 
             // Altura
             // 
@@ -184,21 +188,23 @@
             this.Altura.TabIndex = 9;
             this.Altura.Text = "Altura";
             this.Altura.UseVisualStyleBackColor = false;
+            this.Altura.Click += new System.EventHandler(this.Altura_Click);
             // 
-            // movimiento2
+            // movimiento2_3
             // 
-            this.movimiento2.BackColor = System.Drawing.Color.Transparent;
-            this.movimiento2.FlatAppearance.BorderSize = 0;
-            this.movimiento2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.movimiento2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.movimiento2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.movimiento2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movimiento2.Location = new System.Drawing.Point(861, 574);
-            this.movimiento2.Name = "movimiento2";
-            this.movimiento2.Size = new System.Drawing.Size(126, 40);
-            this.movimiento2.TabIndex = 14;
-            this.movimiento2.Text = "Movimiento 2";
-            this.movimiento2.UseVisualStyleBackColor = false;
+            this.movimiento2_3.BackColor = System.Drawing.Color.Transparent;
+            this.movimiento2_3.FlatAppearance.BorderSize = 0;
+            this.movimiento2_3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.movimiento2_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.movimiento2_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.movimiento2_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movimiento2_3.Location = new System.Drawing.Point(861, 574);
+            this.movimiento2_3.Name = "movimiento2_3";
+            this.movimiento2_3.Size = new System.Drawing.Size(126, 40);
+            this.movimiento2_3.TabIndex = 14;
+            this.movimiento2_3.Text = "Movimiento 2 y 3";
+            this.movimiento2_3.UseVisualStyleBackColor = false;
+            this.movimiento2_3.Click += new System.EventHandler(this.movimiento2_Click);
             // 
             // posEvolucion
             // 
@@ -214,21 +220,23 @@
             this.posEvolucion.TabIndex = 13;
             this.posEvolucion.Text = "posEvolucion";
             this.posEvolucion.UseVisualStyleBackColor = false;
+            this.posEvolucion.Click += new System.EventHandler(this.posEvolucion_Click);
             // 
-            // movimiento1
+            // movimiento1_2
             // 
-            this.movimiento1.BackColor = System.Drawing.Color.Transparent;
-            this.movimiento1.FlatAppearance.BorderSize = 0;
-            this.movimiento1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.movimiento1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.movimiento1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.movimiento1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movimiento1.Location = new System.Drawing.Point(716, 574);
-            this.movimiento1.Name = "movimiento1";
-            this.movimiento1.Size = new System.Drawing.Size(125, 40);
-            this.movimiento1.TabIndex = 12;
-            this.movimiento1.Text = "Movimiento 1";
-            this.movimiento1.UseVisualStyleBackColor = false;
+            this.movimiento1_2.BackColor = System.Drawing.Color.Transparent;
+            this.movimiento1_2.FlatAppearance.BorderSize = 0;
+            this.movimiento1_2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.movimiento1_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.movimiento1_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.movimiento1_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movimiento1_2.Location = new System.Drawing.Point(716, 574);
+            this.movimiento1_2.Name = "movimiento1_2";
+            this.movimiento1_2.Size = new System.Drawing.Size(125, 40);
+            this.movimiento1_2.TabIndex = 12;
+            this.movimiento1_2.Text = "Movimiento 1 y 2";
+            this.movimiento1_2.UseVisualStyleBackColor = false;
+            this.movimiento1_2.Click += new System.EventHandler(this.movimiento1_Click);
             // 
             // preEvolucion
             // 
@@ -244,6 +252,7 @@
             this.preEvolucion.TabIndex = 11;
             this.preEvolucion.Text = "PreEvolucion";
             this.preEvolucion.UseVisualStyleBackColor = false;
+            this.preEvolucion.Click += new System.EventHandler(this.preEvolucion_Click);
             // 
             // peso
             // 
@@ -259,6 +268,7 @@
             this.peso.TabIndex = 10;
             this.peso.Text = "Peso";
             this.peso.UseVisualStyleBackColor = false;
+            this.peso.Click += new System.EventHandler(this.peso_Click);
             // 
             // VentanaPrincipal
             // 
@@ -266,9 +276,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokedexC_sharp.Properties.Resources.Pokedex;
             this.ClientSize = new System.Drawing.Size(1217, 838);
-            this.Controls.Add(this.movimiento2);
+            this.Controls.Add(this.movimiento2_3);
             this.Controls.Add(this.posEvolucion);
-            this.Controls.Add(this.movimiento1);
+            this.Controls.Add(this.movimiento1_2);
             this.Controls.Add(this.preEvolucion);
             this.Controls.Add(this.peso);
             this.Controls.Add(this.Altura);
@@ -278,7 +288,7 @@
             this.Controls.Add(this.especie);
             this.Controls.Add(this.descripcion);
             this.Controls.Add(this.siguiente);
-            this.Controls.Add(this.nombre);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.anterior);
             this.Controls.Add(this.imagen);
             this.Name = "VentanaPrincipal";
@@ -293,16 +303,16 @@
         private System.Windows.Forms.PictureBox imagen;
         private System.Windows.Forms.Button anterior;
         private System.Windows.Forms.Button siguiente;
-        private System.Windows.Forms.Label nombre;
+        private System.Windows.Forms.Label label;
         private System.Windows.Forms.Button descripcion;
         private System.Windows.Forms.Button especie;
         private System.Windows.Forms.Button tipo;
         private System.Windows.Forms.Button habilidad;
         private System.Windows.Forms.Button habitat;
         private System.Windows.Forms.Button Altura;
-        private System.Windows.Forms.Button movimiento2;
+        private System.Windows.Forms.Button movimiento2_3;
         private System.Windows.Forms.Button posEvolucion;
-        private System.Windows.Forms.Button movimiento1;
+        private System.Windows.Forms.Button movimiento1_2;
         private System.Windows.Forms.Button preEvolucion;
         private System.Windows.Forms.Button peso;
     }
