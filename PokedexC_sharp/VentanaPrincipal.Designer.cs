@@ -289,7 +289,7 @@
             this.buscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buscar.Location = new System.Drawing.Point(716, 682);
             this.buscar.Name = "buscar";
