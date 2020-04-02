@@ -29,12 +29,19 @@ namespace PokedexC_sharp
 
         public void busqueda(String texto)//al hacer la busqueda este se conecta con la base de datos
         {
-            pokemons = conexion.getPokemonNombre(texto);//pasa el nombre a la clase Conexion
+            try
+            {
+                pokemons = conexion.getPokemonNombre(texto);//pasa el nombre a la clase Conexion
 
-            label.Text = pokemons.Rows[0]["nombre"].ToString();//coge la columna nombre y la pasa a String
-            imagen.Image = blobImagen((byte[])pokemons.Rows[0]["imagen"]);//pone la imagen del pokemon
+                label.Text = pokemons.Rows[0]["nombre"].ToString();//coge la columna nombre y la pasa a String
+                imagen.Image = blobImagen((byte[])pokemons.Rows[0]["imagen"]);//pone la imagen del pokemon
 
-            idActual = Convert.ToInt16(pokemons.Rows[0]["id"]);
+                //idActual = Convert.ToInt16(pokemons.Rows[0]["id"]);
+            }
+            catch
+            {
+                Console.WriteLine("Pokemon no encontrado. Tal vez esta mal escrito");
+            }
         }
 
         private Image blobImagen(byte[] img)
