@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.imagen = new System.Windows.Forms.PictureBox();
             this.anterior = new System.Windows.Forms.Button();
             this.siguiente = new System.Windows.Forms.Button();
@@ -37,12 +39,14 @@
             this.tipo = new System.Windows.Forms.Button();
             this.habilidad = new System.Windows.Forms.Button();
             this.habitat = new System.Windows.Forms.Button();
-            this.Altura = new System.Windows.Forms.Button();
+            this.altura = new System.Windows.Forms.Button();
             this.movimiento2_3 = new System.Windows.Forms.Button();
             this.posEvolucion = new System.Windows.Forms.Button();
             this.movimiento1_2 = new System.Windows.Forms.Button();
             this.preEvolucion = new System.Windows.Forms.Button();
             this.peso = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.buscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,6 +113,7 @@
             this.descripcion.TabIndex = 4;
             this.descripcion.Text = "Descripcion";
             this.descripcion.UseVisualStyleBackColor = false;
+            this.descripcion.Click += new System.EventHandler(this.descripcion_Click);
             // 
             // especie
             // 
@@ -174,21 +179,21 @@
             this.habitat.UseVisualStyleBackColor = false;
             this.habitat.Click += new System.EventHandler(this.habitat_Click);
             // 
-            // Altura
+            // altura
             // 
-            this.Altura.BackColor = System.Drawing.Color.Transparent;
-            this.Altura.FlatAppearance.BorderSize = 0;
-            this.Altura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Altura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Altura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Altura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Altura.Location = new System.Drawing.Point(1054, 418);
-            this.Altura.Name = "Altura";
-            this.Altura.Size = new System.Drawing.Size(79, 47);
-            this.Altura.TabIndex = 9;
-            this.Altura.Text = "Altura";
-            this.Altura.UseVisualStyleBackColor = false;
-            this.Altura.Click += new System.EventHandler(this.Altura_Click);
+            this.altura.BackColor = System.Drawing.Color.Transparent;
+            this.altura.FlatAppearance.BorderSize = 0;
+            this.altura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.altura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.altura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.altura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.altura.Location = new System.Drawing.Point(1054, 418);
+            this.altura.Name = "altura";
+            this.altura.Size = new System.Drawing.Size(79, 47);
+            this.altura.TabIndex = 9;
+            this.altura.Text = "Altura";
+            this.altura.UseVisualStyleBackColor = false;
+            this.altura.Click += new System.EventHandler(this.altura_Click);
             // 
             // movimiento2_3
             // 
@@ -270,18 +275,43 @@
             this.peso.UseVisualStyleBackColor = false;
             this.peso.Click += new System.EventHandler(this.peso_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "icons8_pokeball.ico");
+            this.imageList1.Images.SetKeyName(1, "icons8_pokedex_1.ico");
+            // 
+            // buscar
+            // 
+            this.buscar.BackColor = System.Drawing.Color.Transparent;
+            this.buscar.FlatAppearance.BorderSize = 0;
+            this.buscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buscar.Location = new System.Drawing.Point(716, 682);
+            this.buscar.Name = "buscar";
+            this.buscar.Size = new System.Drawing.Size(179, 49);
+            this.buscar.TabIndex = 15;
+            this.buscar.Text = "Busqueda";
+            this.buscar.UseVisualStyleBackColor = false;
+            this.buscar.Click += new System.EventHandler(this.buscar_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokedexC_sharp.Properties.Resources.Pokedex;
             this.ClientSize = new System.Drawing.Size(1217, 838);
+            this.Controls.Add(this.buscar);
             this.Controls.Add(this.movimiento2_3);
             this.Controls.Add(this.posEvolucion);
             this.Controls.Add(this.movimiento1_2);
             this.Controls.Add(this.preEvolucion);
             this.Controls.Add(this.peso);
-            this.Controls.Add(this.Altura);
+            this.Controls.Add(this.altura);
             this.Controls.Add(this.habitat);
             this.Controls.Add(this.habilidad);
             this.Controls.Add(this.tipo);
@@ -291,6 +321,7 @@
             this.Controls.Add(this.label);
             this.Controls.Add(this.anterior);
             this.Controls.Add(this.imagen);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VentanaPrincipal";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.imagen)).EndInit();
@@ -309,12 +340,14 @@
         private System.Windows.Forms.Button tipo;
         private System.Windows.Forms.Button habilidad;
         private System.Windows.Forms.Button habitat;
-        private System.Windows.Forms.Button Altura;
+        private System.Windows.Forms.Button altura;
         private System.Windows.Forms.Button movimiento2_3;
         private System.Windows.Forms.Button posEvolucion;
         private System.Windows.Forms.Button movimiento1_2;
         private System.Windows.Forms.Button preEvolucion;
         private System.Windows.Forms.Button peso;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button buscar;
     }
 }
 

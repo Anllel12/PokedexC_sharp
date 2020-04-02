@@ -27,6 +27,16 @@ namespace PokedexC_sharp
             imagen.Image = blobImagen((byte[])pokemons.Rows[0]["imagen"]);//pone la imagen del pokemon
         }
 
+        public void busqueda(String texto)//al hacer la busqueda este se conecta con la base de datos
+        {
+            pokemons = conexion.getPokemonNombre(texto);//pasa el nombre a la clase Conexion
+
+            label.Text = pokemons.Rows[0]["nombre"].ToString();//coge la columna nombre y la pasa a String
+            imagen.Image = blobImagen((byte[])pokemons.Rows[0]["imagen"]);//pone la imagen del pokemon
+
+            idActual = Convert.ToInt16(pokemons.Rows[0]["id"]);
+        }
+
         private Image blobImagen(byte[] img)
         {
             MemoryStream ms = new System.IO.MemoryStream(img);//lee el formato de la Base de Datos y lo transforma en imagen
@@ -77,14 +87,14 @@ namespace PokedexC_sharp
             label.Text = pokemons.Rows[0]["habitat"].ToString();//coge la columna nombre y la pasa a String
         }
 
-        private void Altura_Click(object sender, EventArgs e)
+        private void altura_Click(object sender, EventArgs e)
         {
-            label.Text = pokemons.Rows[0]["altura"].ToString();//coge la columna nombre y la pasa a String
+            label.Text = pokemons.Rows[0]["altura"].ToString() + "m";//coge la columna nombre y la pasa a String
         }
 
         private void peso_Click(object sender, EventArgs e)
         {
-            label.Text = pokemons.Rows[0]["peso"].ToString();//coge la columna nombre y la pasa a String
+            label.Text = pokemons.Rows[0]["peso"].ToString() + "KG";//coge la columna nombre y la pasa a String
         }
 
         private void preEvolucion_Click(object sender, EventArgs e)
@@ -107,6 +117,20 @@ namespace PokedexC_sharp
         {
             label.Text = pokemons.Rows[0]["movimiento3"].ToString();//coge la columna nombre y la pasa a String
             label.Text += " " + pokemons.Rows[0]["movimiento4"].ToString();//coge la columna nombre y la pasa a String
+        }
+
+        private void descripcion_Click(object sender, EventArgs e)
+        {
+            label.Text = pokemons.Rows[0]["descripcion"].ToString();//coge la columna nombre y la pasa a String
+        }
+
+        private void buscar_Click(object sender, EventArgs e)
+        {
+            Buscador ventana = new Buscador();
+
+            ventana.Show();//aparece el buscador
+
+            this.Hide();//hago esto porque si no aparecen muchas pantallas de la pokedex
         }
     }
 }
