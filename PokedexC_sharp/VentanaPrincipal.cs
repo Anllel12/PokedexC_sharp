@@ -36,7 +36,7 @@ namespace PokedexC_sharp
                 label.Text = pokemons.Rows[0]["nombre"].ToString();//coge la columna nombre y la pasa a String
                 imagen.Image = blobImagen((byte[])pokemons.Rows[0]["imagen"]);//pone la imagen del pokemon
 
-                //idActual = Convert.ToInt16(pokemons.Rows[0]["id"]);
+                idActual = Convert.ToInt16(pokemons.Rows[0]["id"]);//hago que coincida el idActual con el pokemon de la busqueda
             }
             catch
             {
