@@ -74,7 +74,19 @@
     <Compile Include="Buscador.Designer.cs">
       <DependentUpon>Buscador.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusquedaFiltro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaFiltro.Designer.cs">
+      <DependentUpon>BusquedaFiltro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Todos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Todos.Designer.cs">
+      <DependentUpon>Todos.cs</DependentUpon>
+    </Compile>
     <Compile Include="VentanaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +98,9 @@
     <EmbeddedResource Include="Buscador.resx">
       <DependentUpon>Buscador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaFiltro.resx">
+      <DependentUpon>BusquedaFiltro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -96,6 +111,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Todos.resx">
+      <DependentUpon>Todos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </EmbeddedResource>

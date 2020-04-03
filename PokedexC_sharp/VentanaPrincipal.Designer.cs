@@ -47,6 +47,8 @@
             this.peso = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.buscar = new System.Windows.Forms.Button();
+            this.filtro = new System.Windows.Forms.Button();
+            this.todos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -299,12 +301,48 @@
             this.buscar.UseVisualStyleBackColor = false;
             this.buscar.Click += new System.EventHandler(this.buscar_Click);
             // 
+            // filtro
+            // 
+            this.filtro.BackColor = System.Drawing.Color.Transparent;
+            this.filtro.FlatAppearance.BorderSize = 0;
+            this.filtro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.filtro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.filtro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.filtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filtro.ForeColor = System.Drawing.Color.White;
+            this.filtro.Location = new System.Drawing.Point(942, 678);
+            this.filtro.Name = "filtro";
+            this.filtro.Size = new System.Drawing.Size(179, 53);
+            this.filtro.TabIndex = 16;
+            this.filtro.Text = "Filtro";
+            this.filtro.UseVisualStyleBackColor = false;
+            this.filtro.Click += new System.EventHandler(this.filtro_Click);
+            // 
+            // todos
+            // 
+            this.todos.BackColor = System.Drawing.Color.Transparent;
+            this.todos.FlatAppearance.BorderSize = 0;
+            this.todos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.todos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.todos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.todos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todos.ForeColor = System.Drawing.Color.Black;
+            this.todos.Location = new System.Drawing.Point(83, 615);
+            this.todos.Name = "todos";
+            this.todos.Size = new System.Drawing.Size(69, 65);
+            this.todos.TabIndex = 17;
+            this.todos.Text = "Todos";
+            this.todos.UseVisualStyleBackColor = false;
+            this.todos.Click += new System.EventHandler(this.todos_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PokedexC_sharp.Properties.Resources.Pokedex;
             this.ClientSize = new System.Drawing.Size(1217, 838);
+            this.Controls.Add(this.todos);
+            this.Controls.Add(this.filtro);
             this.Controls.Add(this.buscar);
             this.Controls.Add(this.movimiento2_3);
             this.Controls.Add(this.posEvolucion);
@@ -348,6 +386,8 @@
         private System.Windows.Forms.Button peso;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button buscar;
+        private System.Windows.Forms.Button filtro;
+        private System.Windows.Forms.Button todos;
     }
 }
 

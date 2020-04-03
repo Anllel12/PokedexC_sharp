@@ -139,5 +139,19 @@ namespace PokedexC_sharp
 
             this.Hide();//hago esto porque si no aparecen muchas pantallas de la pokedex
         }
+
+        private void filtro_Click(object sender, EventArgs e)
+        {
+            BusquedaFiltro ventana = new BusquedaFiltro();
+
+            ventana.Show();//aparece el buscador por filtro
+        }
+
+        private void todos_Click(object sender, EventArgs e)
+        {
+            Todos ventana = new Todos();
+
+            ventana.Show();//aparece el dataGrid con todos los pokemon
+        }
     }
 }
