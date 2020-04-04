@@ -9,6 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Autor: Ángel Esquinas
+ * 
+ * Esta clase consiste en la
+ */
+
 namespace PokedexC_sharp
 {
     public partial class VentanaPrincipal : Form

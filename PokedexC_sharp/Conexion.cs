@@ -11,6 +11,7 @@ namespace PokedexC_sharp
     class Conexion
     {
         public MySqlConnection conexion;
+        
 
         public Conexion()
         {
@@ -31,6 +32,24 @@ namespace PokedexC_sharp
             {
                 conexion.Open();//conectamos con la base de datos
                 MySqlCommand consulta = new MySqlCommand("SELECT * FROM pokemon", conexion);//hacemos la query
+                MySqlDataReader resultado = consulta.ExecuteReader();//la ejecutamos
+                DataTable pokemons = new DataTable();
+                pokemons.Load(resultado);//cargamos los datos
+                conexion.Close();//cerramos la conexion para dejar 
+                return pokemons;
+            }
+            catch (MySqlException e)
+            {
+                throw e;
+            }
+        }
+
+        public DataTable getFiltroPokemon(String query)
+        {
+            try
+            {
+                conexion.Open();//conectamos con la base de datos
+                MySqlCommand consulta = new MySqlCommand(query, conexion);//hacemos la query
                 MySqlDataReader resultado = consulta.ExecuteReader();//la ejecutamos
                 DataTable pokemons = new DataTable();
                 pokemons.Load(resultado);//cargamos los datos

@@ -29,21 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BusquedaFiltro));
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.especie = new System.Windows.Forms.CheckedListBox();
             this.filtrar = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.tipo = new System.Windows.Forms.CheckedListBox();
+            this.habilidad = new System.Windows.Forms.CheckedListBox();
+            this.habitat = new System.Windows.Forms.CheckedListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // checkedListBox1
+            // especie
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.especie.FormattingEnabled = true;
+            this.especie.Items.AddRange(new object[] {
             "Semilla",
             "Lagartija",
             "Llama",
@@ -140,10 +144,10 @@
             "Dragon",
             "Genetico",
             "Nueva Especie"});
-            this.checkedListBox1.Location = new System.Drawing.Point(12, 62);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(140, 244);
-            this.checkedListBox1.TabIndex = 2;
+            this.especie.Location = new System.Drawing.Point(12, 62);
+            this.especie.Name = "especie";
+            this.especie.Size = new System.Drawing.Size(140, 244);
+            this.especie.TabIndex = 2;
             // 
             // filtrar
             // 
@@ -209,10 +213,10 @@
             this.label3.Text = "Habilidad";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkedListBox2
+            // tipo
             // 
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
+            this.tipo.FormattingEnabled = true;
+            this.tipo.Items.AddRange(new object[] {
             "Agua",
             "Bicho",
             "Dragon",
@@ -228,15 +232,15 @@
             "Tierra",
             "Veneno",
             "Volador"});
-            this.checkedListBox2.Location = new System.Drawing.Point(158, 62);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(140, 244);
-            this.checkedListBox2.TabIndex = 26;
+            this.tipo.Location = new System.Drawing.Point(158, 62);
+            this.tipo.Name = "tipo";
+            this.tipo.Size = new System.Drawing.Size(140, 244);
+            this.tipo.TabIndex = 26;
             // 
-            // checkedListBox3
+            // habilidad
             // 
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Items.AddRange(new object[] {
+            this.habilidad.FormattingEnabled = true;
+            this.habilidad.Items.AddRange(new object[] {
             "Aborbe agua",
             "Absor. elec.",
             "Absorbe Agua",
@@ -284,15 +288,15 @@
             "Torrente",
             "Velo Arena",
             "Vista Lince"});
-            this.checkedListBox3.Location = new System.Drawing.Point(304, 62);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(140, 244);
-            this.checkedListBox3.TabIndex = 27;
+            this.habilidad.Location = new System.Drawing.Point(304, 62);
+            this.habilidad.Name = "habilidad";
+            this.habilidad.Size = new System.Drawing.Size(140, 244);
+            this.habilidad.TabIndex = 27;
             // 
-            // checkedListBox4
+            // habitat
             // 
-            this.checkedListBox4.FormattingEnabled = true;
-            this.checkedListBox4.Items.AddRange(new object[] {
+            this.habitat.FormattingEnabled = true;
+            this.habitat.Items.AddRange(new object[] {
             "Agua Dulce",
             "Agua Salada",
             "Bosque",
@@ -302,42 +306,87 @@
             "Montaña",
             "Pradera",
             "RARO"});
-            this.checkedListBox4.Location = new System.Drawing.Point(450, 62);
-            this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(140, 244);
-            this.checkedListBox4.TabIndex = 28;
+            this.habitat.Location = new System.Drawing.Point(450, 62);
+            this.habitat.Name = "habitat";
+            this.habitat.Size = new System.Drawing.Size(140, 244);
+            this.habitat.TabIndex = 28;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(615, 91);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "label4";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(618, 120);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(621, 157);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "label6";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(624, 183);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "label7";
             // 
             // BusquedaFiltro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 314);
-            this.Controls.Add(this.checkedListBox4);
-            this.Controls.Add(this.checkedListBox3);
-            this.Controls.Add(this.checkedListBox2);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.habitat);
+            this.Controls.Add(this.habilidad);
+            this.Controls.Add(this.tipo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label);
             this.Controls.Add(this.filtrar);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.especie);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BusquedaFiltro";
             this.Text = "BusquedaFiltro";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox especie;
         private System.Windows.Forms.Button filtrar;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.CheckedListBox checkedListBox3;
-        private System.Windows.Forms.CheckedListBox checkedListBox4;
+        private System.Windows.Forms.CheckedListBox tipo;
+        private System.Windows.Forms.CheckedListBox habilidad;
+        private System.Windows.Forms.CheckedListBox habitat;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
