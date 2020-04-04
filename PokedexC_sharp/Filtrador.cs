@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Autor: Ángel Esquinas
+ * 
+ * Esta clase enseña los datos realizados en la query de los filtros
+ */
+
 namespace PokedexC_sharp
 {
     public partial class Filtrador : Form

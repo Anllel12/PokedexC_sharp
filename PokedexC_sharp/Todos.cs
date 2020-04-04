@@ -9,6 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Autor: Ángel Esquinas
+ * 
+ * Esta clase muestra la todos los pokemon que tenemos en la base de datos segun donde pinchemos obtendremos una imagen y el nombre del pokemon
+ */
+
 namespace PokedexC_sharp
 {
     public partial class Todos : Form

@@ -38,10 +38,6 @@
             this.tipo = new System.Windows.Forms.CheckedListBox();
             this.habilidad = new System.Windows.Forms.CheckedListBox();
             this.habitat = new System.Windows.Forms.CheckedListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // especie
@@ -311,51 +307,11 @@
             this.habitat.Size = new System.Drawing.Size(140, 244);
             this.habitat.TabIndex = 28;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(615, 91);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "label4";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(618, 120);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "label5";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(621, 157);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "label6";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(624, 183);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "label7";
-            // 
             // BusquedaFiltro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 314);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.habitat);
             this.Controls.Add(this.habilidad);
             this.Controls.Add(this.tipo);
@@ -369,7 +325,6 @@
             this.Name = "BusquedaFiltro";
             this.Text = "BusquedaFiltro";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -384,9 +339,5 @@
         private System.Windows.Forms.CheckedListBox tipo;
         private System.Windows.Forms.CheckedListBox habilidad;
         private System.Windows.Forms.CheckedListBox habitat;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
     }
 }

@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Autor: Ángel Esquinas
+ * 
+ * Esta clase consiste en la realizacion de una query por la cual filtrare los pokemon 
+ */
+
 namespace PokedexC_sharp
 {
     public partial class BusquedaFiltro : Form
@@ -25,7 +31,7 @@ namespace PokedexC_sharp
             InitializeComponent();
         }
 
-        private void queryEspecie()
+        private void queryEspecie()//realizo la query si especie esta seleccionada
         {
             if (listaEspecie != "")
             {
@@ -133,12 +139,12 @@ namespace PokedexC_sharp
 
         private void filtrar_Click(object sender, EventArgs e)
         {                            
-            listaEspecie = listaEspecie + especie.Text;
+            listaEspecie = listaEspecie + especie.Text;//paso el texto del Item sellecionado a una String
             listaTipo = listaTipo + tipo.Text;
             listaHabilidad = listaHabilidad + habilidad.Text;
             listaHabitat = listaHabitat + habitat.Text;
 
-            queryEspecie();
+            queryEspecie();//realizo todas las posibilidades
             if (!auxiliar)
             {
                 queryTipo();

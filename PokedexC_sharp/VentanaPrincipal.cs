@@ -12,7 +12,7 @@ using System.Windows.Forms;
 /*
  * Autor: Ángel Esquinas
  * 
- * Esta clase consiste en la
+ * Esta clase consiste en la ventana principal de la pokedex aqui encontraras la pokedex y diferentes botones que muestran los datos del pokemon
  */
 
 namespace PokedexC_sharp

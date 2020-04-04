@@ -6,6 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
+/*
+ * Autor: Ángel Esquinas
+ * 
+ * Esta clase consiste en la conexion a la base de datos y la ejecutacion de las diferentes querys que necesitemos
+ */
+
 namespace PokedexC_sharp
 {
     class Conexion

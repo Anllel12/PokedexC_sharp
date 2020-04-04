@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Autor: Ángel Esquinas
+ * 
+ * Esta clase consiste en la busqueda de pokemon por su nombre que mostraremos en la pokedex
+ */
+
 namespace PokedexC_sharp
 {
     public partial class Buscador : Form
