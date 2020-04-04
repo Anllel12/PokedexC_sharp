@@ -16,5 +16,10 @@ namespace PokedexC_sharp
         {
             InitializeComponent();
         }
+
+        private void filtrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
