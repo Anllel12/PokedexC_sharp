@@ -55,7 +55,7 @@ namespace PokedexC_sharp
             try
             {
                 conexion.Open();//conectamos con la base de datos
-                MySqlCommand consulta = new MySqlCommand(query, conexion);//hacemos la query
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM pokemon " + query  , conexion);//hacemos la query
                 MySqlDataReader resultado = consulta.ExecuteReader();//la ejecutamos
                 DataTable pokemons = new DataTable();
                 pokemons.Load(resultado);//cargamos los datos

@@ -35,7 +35,7 @@ namespace PokedexC_sharp
         {
             if (listaEspecie != "")
             {
-                query = query + "SELECT * FROM pokemon WHERE especie='" + listaEspecie + "'";
+                query = query + "WHERE especie='" + listaEspecie + "'";
 
                 if (listaTipo != "")
                 {
@@ -89,7 +89,7 @@ namespace PokedexC_sharp
         {
             if (listaTipo != "")
             {
-                query = query + "SELECT * FROM pokemon WHERE tipo1='" + listaTipo + "'";
+                query = query + "WHERE tipo1='" + listaTipo + "'";
 
                 if (listaHabilidad != "")
                 {
@@ -118,7 +118,7 @@ namespace PokedexC_sharp
         {
             if (listaHabilidad != "")
             {
-                query = query + "SELECT * FROM pokemon WHERE habilidad='" + listaHabilidad + "'";
+                query = query + "WHERE habilidad='" + listaHabilidad + "'";
 
                 if (listaHabitat != "")
                 {
@@ -133,7 +133,7 @@ namespace PokedexC_sharp
         {        
             if (listaHabitat != "")
             {
-                query = query + "SELECT * FROM pokemon WHERE habitat='" + listaHabitat + "'";
+                query = query + "WHERE habitat='" + listaHabitat + "'";
             }        
         }
 

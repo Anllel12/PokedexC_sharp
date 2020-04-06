@@ -27,7 +27,7 @@ namespace PokedexC_sharp
 
             InitializeComponent();
 
-            //dataGridView1.DataSource = conexion.getFiltroPokemon(ventana.query);
+            dataGridView1.DataSource = conexion.getFiltroPokemon(ventana.query);
             
             Console.WriteLine(ventana.query);
         }
