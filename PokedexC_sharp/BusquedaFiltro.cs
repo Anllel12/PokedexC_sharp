@@ -18,6 +18,8 @@ namespace PokedexC_sharp
 {
     public partial class BusquedaFiltro : Form
     {
+        Conexion conexion = new Conexion();
+
         public String query = "";
         public String listaEspecie = "";
         public String listaHabilidad = "";
@@ -31,7 +33,7 @@ namespace PokedexC_sharp
             InitializeComponent();
         }
 
-        private void queryEspecie()//realizo la query si especie esta seleccionada
+        public void queryEspecie()//realizo la query si especie esta seleccionada
         {
             if (listaEspecie != "")
             {
@@ -85,7 +87,7 @@ namespace PokedexC_sharp
             
         }
 
-        private void queryTipo()
+        public void queryTipo()
         {
             if (listaTipo != "")
             {
@@ -114,7 +116,7 @@ namespace PokedexC_sharp
             
         }
 
-        private void queryHabilidad()
+        public void queryHabilidad()
         {
             if (listaHabilidad != "")
             {
@@ -129,7 +131,7 @@ namespace PokedexC_sharp
                 auxiliar = true;
             }
         }
-        private void queryHabitat()
+        public void queryHabitat()
         {        
             if (listaHabitat != "")
             {
@@ -137,8 +139,10 @@ namespace PokedexC_sharp
             }        
         }
 
-        private void filtrar_Click(object sender, EventArgs e)
-        {                            
+        public void filtrar_Click(object sender, EventArgs e)
+        {
+            Filtrador ventana = new Filtrador();
+
             listaEspecie = listaEspecie + especie.Text;//paso el texto del Item sellecionado a una String
             listaTipo = listaTipo + tipo.Text;
             listaHabilidad = listaHabilidad + habilidad.Text;
@@ -158,13 +162,11 @@ namespace PokedexC_sharp
                 }
             }
 
-            Filtrador ventana = new Filtrador();
+            ventana.dataGridView1.DataSource = conexion.getFiltroPokemon(query);//ya que no recibe bien la String query la clase Filtrador hago la conexion aqui 
 
             ventana.Show();
 
             this.Close();//cierro para que parezca que nunca se hubiese abierto
-
-            Console.WriteLine(query);
         }
     }
 }

@@ -19,7 +19,6 @@ namespace PokedexC_sharp
     public partial class Filtrador : Form
     {
         Conexion conexion = new Conexion();
-        DataTable pokemons = new DataTable();
 
         public Filtrador()
         {
@@ -27,9 +26,7 @@ namespace PokedexC_sharp
 
             InitializeComponent();
 
-            dataGridView1.DataSource = conexion.getFiltroPokemon(ventana.query);
-            
-            Console.WriteLine(ventana.query);
+            //dataGridView1.DataSource = conexion.getFiltroPokemon(ventana.query); No recibe bien la String 
         }
     }
 }
